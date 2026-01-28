@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangor Health Inspection Tracker</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; font-family: sans-serif; display: flex; }
+        #sidebar { width: 350px; background: #fff; border-right: 1px solid #ddd; display: flex; flex-direction: column; }
+        #map { flex: 1; }
+
+        .search-container { padding: 15px; background: #2c3e50; color: white; }
+        .search-bar { width: 100%; padding: 10px; border-radius: 4px; border: none; box-sizing: border-box; }
+
+        .filter-container { padding: 10px 15px; background: #ecf0f1; border-bottom: 1px solid #ddd; display: flex; gap: 10px; }
+        .filter-btn { flex: 1; padding: 5px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background: white; font-size: 12px; text-align: center; }
+        .filter-btn.active { background: #3498db; color: white; border-color: #2980b9; }
+
+        #list-content { flex: 1; overflow-y: auto; padding: 10px; }
+        .restaurant-card { 
+            padding: 12px; border-bottom: 1px solid #eee; cursor: pointer;
+            border-left: 6px solid #ccc; margin-bottom: 5px; transition: 0.2s;
+        }
+        .restaurant-card:hover { background: #f9f9f9; }
+        .card-green { border-left-color: #27ae60; }
+        .card-yellow { border-left-color: #f1c40f; }
+        .card-red { border-left-color: #e74c3c; }
+        
+        strong { display: block; font-size: 14px; margin-bottom: 3px; }
+        small { color: #666; font-size: 11px; }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar">
+        <div class="search-container">
+            <h3 style="margin: 0 0 10px 0; font-size: 16px;">🔍 Restaurant Search</h3>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Enter restaurant name...">
+        </div>
+        
+        <div class="filter-container">
+            <label><input type="checkbox" class="filter" value="green" checked> 🟢 Pass</label>
+            <label><input type="checkbox" class="filter" value="yellow" checked> 🟡 Warning</label>
+            <label><input type="checkbox" class="filter" value="red" checked> 🔴 Critical</label>
+        </div>
+
+        <div id="list-content">Loading restaurant data...</div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        var map = L.map('map').setView([44.8016, -68.7712], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+        const iconUrls = {
+            "green": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png",
+            "yellow": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png",
+            "red": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png"
+        };
+
+        let allData = [];
+        let markerLayers = L.layerGroup().addTo(map);
+
+        // Function to render the map and list based on filters
+        function updateDisplay() {
+            markerLayers.clearLayers();
+            const listContent = document.getElementById('list-content');
+            listContent.innerHTML = '';
+
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const activeFilters = Array.from(document.querySelectorAll('.filter:checked')).map(cb => cb.value);
+
+            const filtered = allData.filter(item => {
+                const matchesSearch = item.name.toLowerCase().includes(searchTerm);
+                const matchesColor = activeFilters.includes(item.color);
+                return matchesSearch && matchesColor;
+            });
+
+            filtered.forEach(item => {
+                // Add Marker
+                const icon = L.icon({ iconUrl: iconUrls[item.color], iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34] });
+                const marker = L.marker([item.lat, item.lng], { icon: icon });
+                marker.bindPopup(`<b>${item.name}</b><br>Critical Violations: ${item.critical}`);
+                markerLayers.addLayer(marker);
+
+                // Add Card to Sidebar
+                const card = document.createElement('div');
+                card.className = `restaurant-card card-${item.color}`;
+                card.innerHTML = `<strong>${item.name}</strong><small>Critical: ${item.critical} | Non-Critical: ${item.non_critical}</small>`;
+                card.onclick = () => {
+                    map.setView([item.lat, item.lng], 16);
+                    marker.openPopup();
+                };
+                listContent.appendChild(card);
+            });
+        }
+
+        // Fetch Data
+        fetch('inspections.json')
+            .then(res => res.json())
+            .then(data => {
+                allData = data;
+                updateDisplay();
+            });
+
+        // Event Listeners for Filters and Search
+        document.getElementById('searchInput').addEventListener('input', updateDisplay);
+        document.querySelectorAll('.filter').forEach(checkbox => {
+            checkbox.addEventListener('change', updateDisplay);
+        });
+    </script>
+</body>
+</html>
