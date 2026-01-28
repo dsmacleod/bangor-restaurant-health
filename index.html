@@ -3,117 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bangor Health Inspection Tracker</title>
-    
+    <title>Bangor Health Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; font-family: sans-serif; display: flex; }
-        #sidebar { width: 350px; background: #fff; border-right: 1px solid #ddd; display: flex; flex-direction: column; }
-        #map { flex: 1; }
-
-        .search-container { padding: 15px; background: #2c3e50; color: white; }
-        .search-bar { width: 100%; padding: 10px; border-radius: 4px; border: none; box-sizing: border-box; }
-
-        .filter-container { padding: 10px 15px; background: #ecf0f1; border-bottom: 1px solid #ddd; display: flex; gap: 10px; }
-        .filter-btn { flex: 1; padding: 5px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background: white; font-size: 12px; text-align: center; }
-        .filter-btn.active { background: #3498db; color: white; border-color: #2980b9; }
-
-        #list-content { flex: 1; overflow-y: auto; padding: 10px; }
-        .restaurant-card { 
-            padding: 12px; border-bottom: 1px solid #eee; cursor: pointer;
-            border-left: 6px solid #ccc; margin-bottom: 5px; transition: 0.2s;
-        }
-        .restaurant-card:hover { background: #f9f9f9; }
+        body, html { margin: 0; padding: 0; height: 100%; font-family: -apple-system, sans-serif; display: flex; flex-direction: column; }
+        #header { background: #2c3e50; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+        #container { display: flex; flex: 1; overflow: hidden; }
+        #map { flex: 2; height: 100%; }
+        #sidebar { flex: 1; max-width: 380px; background: #fdfdfd; border-left: 1px solid #ddd; overflow-y: auto; padding: 15px; }
+        
+        .filter-box { margin-bottom: 15px; display: flex; gap: 10px; font-size: 13px; }
+        .rest-card { padding: 12px; margin-bottom: 8px; border-radius: 6px; border-left: 6px solid #ccc; background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); cursor: pointer; }
+        .rest-card:hover { background: #f0f7ff; }
         .card-green { border-left-color: #27ae60; }
         .card-yellow { border-left-color: #f1c40f; }
         .card-red { border-left-color: #e74c3c; }
         
-        strong { display: block; font-size: 14px; margin-bottom: 3px; }
-        small { color: #666; font-size: 11px; }
+        .search-input { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        @media (max-width: 768px) { #container { flex-direction: column; } #sidebar { max-width: 100%; height: 350px; } }
     </style>
 </head>
 <body>
 
-    <div id="sidebar">
-        <div class="search-container">
-            <h3 style="margin: 0 0 10px 0; font-size: 16px;">🔍 Restaurant Search</h3>
-            <input type="text" id="searchInput" class="search-bar" placeholder="Enter restaurant name...">
-        </div>
-        
-        <div class="filter-container">
-            <label><input type="checkbox" class="filter" value="green" checked> 🟢 Pass</label>
-            <label><input type="checkbox" class="filter" value="yellow" checked> 🟡 Warning</label>
-            <label><input type="checkbox" class="filter" value="red" checked> 🔴 Critical</label>
-        </div>
-
-        <div id="list-content">Loading restaurant data...</div>
+    <div id="header">
+        <div style="font-weight: bold; font-size: 18px;">🍴 Bangor Dining Health Tracker</div>
+        <div id="last-updated" style="font-size: 12px; opacity: 0.8;">Loading...</div>
     </div>
 
-    <div id="map"></div>
+    <div id="container">
+        <div id="map"></div>
+        <div id="sidebar">
+            <input type="text" id="search" class="search-input" placeholder="Search by name...">
+            <div class="filter-box">
+                <label><input type="checkbox" class="f-type" value="green" checked> 🟢 Pass</label>
+                <label><input type="checkbox" class="f-type" value="yellow" checked> 🟡 Warning</label>
+                <label><input type="checkbox" class="f-type" value="red" checked> 🔴 Alert</label>
+            </div>
+            <div id="list"></div>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
     <script>
         var map = L.map('map').setView([44.8016, -68.7712], 13);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-        const iconUrls = {
+        const icons = {
             "green": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png",
             "yellow": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png",
             "red": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png"
         };
 
-        let allData = [];
-        let markerLayers = L.layerGroup().addTo(map);
+        let rawData = [];
+        let markerGroup = L.layerGroup().addTo(map);
 
-        // Function to render the map and list based on filters
-        function updateDisplay() {
-            markerLayers.clearLayers();
-            const listContent = document.getElementById('list-content');
-            listContent.innerHTML = '';
+        function render() {
+            markerGroup.clearLayers();
+            const list = document.getElementById('list');
+            list.innerHTML = "";
+            
+            const query = document.getElementById('search').value.toLowerCase();
+            const activeColors = Array.from(document.querySelectorAll('.f-type:checked')).map(c => c.value);
 
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const activeFilters = Array.from(document.querySelectorAll('.filter:checked')).map(cb => cb.value);
+            const filtered = rawData.filter(d => d.name.toLowerCase().includes(query) && activeColors.includes(d.color));
 
-            const filtered = allData.filter(item => {
-                const matchesSearch = item.name.toLowerCase().includes(searchTerm);
-                const matchesColor = activeFilters.includes(item.color);
-                return matchesSearch && matchesColor;
-            });
+            filtered.forEach((item, i) => {
+                const icon = L.icon({ iconUrl: icons[item.color], iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34] });
+                const marker = L.marker([item.lat, item.lng], { icon: icon }).bindPopup(`<b>${item.name}</b><br>${item.details}`);
+                markerGroup.addLayer(marker);
 
-            filtered.forEach(item => {
-                // Add Marker
-                const icon = L.icon({ iconUrl: iconUrls[item.color], iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34] });
-                const marker = L.marker([item.lat, item.lng], { icon: icon });
-                marker.bindPopup(`<b>${item.name}</b><br>Critical Violations: ${item.critical}`);
-                markerLayers.addLayer(marker);
-
-                // Add Card to Sidebar
-                const card = document.createElement('div');
-                card.className = `restaurant-card card-${item.color}`;
-                card.innerHTML = `<strong>${item.name}</strong><small>Critical: ${item.critical} | Non-Critical: ${item.non_critical}</small>`;
-                card.onclick = () => {
-                    map.setView([item.lat, item.lng], 16);
-                    marker.openPopup();
-                };
-                listContent.appendChild(card);
+                const div = document.createElement('div');
+                div.className = `rest-card card-${item.color}`;
+                div.innerHTML = `<strong>${item.name}</strong><small>Last Inspected: ${item.date}</small><br><span style="font-size:11px; color:#666;">${item.details}</span>`;
+                div.onclick = () => { map.setView([item.lat, item.lng], 16); marker.openPopup(); };
+                list.appendChild(div);
             });
         }
 
-        // Fetch Data
         fetch('inspections.json')
-            .then(res => res.json())
+            .then(r => r.json())
             .then(data => {
-                allData = data;
-                updateDisplay();
+                document.getElementById('last-updated').innerText = `Data current as of: ${data.last_run}`;
+                rawData = data.establishments;
+                render();
             });
 
-        // Event Listeners for Filters and Search
-        document.getElementById('searchInput').addEventListener('input', updateDisplay);
-        document.querySelectorAll('.filter').forEach(checkbox => {
-            checkbox.addEventListener('change', updateDisplay);
-        });
+        document.getElementById('search').oninput = render;
+        document.querySelectorAll('.f-type').forEach(c => c.onchange = render);
     </script>
 </body>
 </html>
