@@ -80,12 +80,36 @@
             });
         }
 
-        fetch('inspections.json')
-            .then(r => r.json())
+        function loadInspections() {
+            return fetch('inspections.json')
+                .then(r => {
+                    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                    return r.json();
+                })
+                .then(data => {
+                    if (!data || !Array.isArray(data.establishments) || data.establishments.length === 0) {
+                        throw new Error('No establishments in inspections.json');
+                    }
+                    return data;
+                })
+                .catch(() => {
+                    // Fallback when page is opened from temp-repo but data lives one level up
+                    return fetch('../inspections.json')
+                        .then(r => {
+                            if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                            return r.json();
+                        });
+                });
+        }
+
+        loadInspections()
             .then(data => {
                 document.getElementById('last-updated').innerText = `Data current as of: ${data.last_run}`;
-                rawData = data.establishments;
+                rawData = data.establishments || [];
                 render();
+            })
+            .catch((err) => {
+                document.getElementById('last-updated').innerText = `Data failed to load: ${err.message}`;
             });
 
         document.getElementById('search').oninput = render;

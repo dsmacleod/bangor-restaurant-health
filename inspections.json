@@ -1,4 +1,356 @@
 {
-  "last_run": "February 18, 2026 at 09:38 AM",
-  "establishments": []
+  "last_run": "February 18, 2026 at 04:43 PM",
+  "establishments": [
+    {
+      "name": "32768 - CURBSIDE EATS & TREATS",
+      "date": "2025-09-03",
+      "lat": 44.7918361,
+      "lng": -68.7763334,
+      "color": "green",
+      "details": "Pass",
+      "address": "9 N MAIN ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "30722 - CROSSMAN, AMY",
+      "date": "2023-07-24",
+      "lat": 44.8032065,
+      "lng": -68.7710111,
+      "color": "green",
+      "details": "Pass",
+      "address": "92 CENTRAL ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "31747 - WOODS, ELIZABATH PAIGE",
+      "date": "2023-12-182024-03-18",
+      "lat": 44.7826566,
+      "lng": -68.7813436,
+      "color": "green",
+      "details": "PassPass",
+      "address": "703 MAIN ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "8195 - NOCTURNEM DRAFT HAUS",
+      "date": "2023-05-23",
+      "lat": 44.800516,
+      "lng": -68.7715908,
+      "color": "green",
+      "details": "Pass",
+      "address": "56 MAIN ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "10247 - HARVEST MOON DELI",
+      "date": "2025-04-30",
+      "lat": 44.8003473,
+      "lng": -68.7727357,
+      "color": "green",
+      "details": "Pass",
+      "address": "72 COLUMBIA ST, BANGOR, ME 04401-6319, Bangor, ME"
+    },
+    {
+      "name": "31755 - MORALES, ALIYAH",
+      "date": "2023-12-15",
+      "lat": 44.8014475,
+      "lng": -68.7714796,
+      "color": "green",
+      "details": "Pass",
+      "address": "1 MAIN ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "31756 - CAMIRE, AALIYAH",
+      "date": "2024-01-03",
+      "lat": 44.8014475,
+      "lng": -68.7714796,
+      "color": "green",
+      "details": "Pass",
+      "address": "1 MAIN ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "31757 - MICHAUD, MATTHEW",
+      "date": "2023-12-15",
+      "lat": 44.8014475,
+      "lng": -68.7714796,
+      "color": "green",
+      "details": "Pass",
+      "address": "1 MAIN ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "31758 - CYR, KIMBERLY",
+      "date": "2024-04-232024-08-14",
+      "lat": 44.830565,
+      "lng": -68.7491141,
+      "color": "green",
+      "details": "PassPass",
+      "address": "663 STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "24591 - SWEET FROG",
+      "date": "2021-01-202025-07-22",
+      "lat": 44.826508,
+      "lng": -68.7568642,
+      "color": "green",
+      "details": "PassPass",
+      "address": "878B STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "9233 - SUBWAY",
+      "date": "2022-04-262025-11-07",
+      "lat": 44.8249498,
+      "lng": -68.7816581,
+      "color": "green",
+      "details": "PassPass",
+      "address": "720 BROADWAY, BANGOR, ME 04401-3393, Bangor, ME"
+    },
+    {
+      "name": "8210 - THE ICE CREAM SALOON",
+      "date": "2020-08-05",
+      "lat": 44.8000637,
+      "lng": -68.7910823,
+      "color": "green",
+      "details": "Pass",
+      "address": "569 HAMMOND ST, BANGOR, ME 04858, Bangor, ME"
+    },
+    {
+      "name": "21544 - THE LEGACY SANDWICH",
+      "date": "2019-02-282019-03-15",
+      "lat": 44.8042805,
+      "lng": -68.7637746,
+      "color": "green",
+      "details": "FailPass",
+      "address": "163 STATE ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "29743 - CRANE, ANDREW",
+      "date": "2021-10-062023-10-062024-03-18",
+      "lat": 44.7993592,
+      "lng": -68.7671257,
+      "color": "green",
+      "details": "PassPassPass",
+      "address": "51 WASHINGTON ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "23600 - DAKIN POOL",
+      "date": "2020-09-08",
+      "lat": 44.8136054,
+      "lng": -68.7693828,
+      "color": "green",
+      "details": "Pass",
+      "address": "375 PINE ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "3126 - WHITE HOUSE INN",
+      "date": "2019-06-212019-06-212025-02-122025-02-12",
+      "lat": 44.7735969,
+      "lng": -68.8631097,
+      "color": "green",
+      "details": "PassPassPassPass",
+      "address": "155 LITTLEFIELD AVE, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "24632 - PORTLAND PIE BANGOR",
+      "date": "2025-04-28",
+      "lat": 44.7949649,
+      "lng": -68.7745494,
+      "color": "green",
+      "details": "Pass",
+      "address": "89-91 MAIN ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "27707 - CAROLINA RIB KING",
+      "date": "2018-09-07",
+      "lat": 44.78989,
+      "lng": -68.7844137,
+      "color": "green",
+      "details": "Pass",
+      "address": "BASS PARK, BANGOR, ME 04240, Bangor, ME"
+    },
+    {
+      "name": "32828 - REW, ANYA",
+      "date": "2025-06-09",
+      "lat": 44.7861536,
+      "lng": -68.7787959,
+      "color": "green",
+      "details": "Pass",
+      "address": "586 MAIN ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "27714 - JAMAICAN VYBZ",
+      "date": "2018-08-24",
+      "lat": 44.7939004,
+      "lng": -68.7731896,
+      "color": "green",
+      "details": "Pass",
+      "address": ", BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "27721 - WINSHIP, SYDNEY",
+      "date": "2019-08-202019-08-202024-04-26",
+      "lat": 44.8147126,
+      "lng": -68.7584702,
+      "color": "green",
+      "details": "PassPassPass",
+      "address": "176 MT HOPE AVE, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "27726 - 48 WAKE N SHAKE",
+      "date": "2018-09-07",
+      "lat": 44.78989,
+      "lng": -68.7844137,
+      "color": "green",
+      "details": "Pass",
+      "address": "BASS PARK, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "10323 - UMAMI",
+      "date": "2024-02-082024-05-06",
+      "lat": 44.8014475,
+      "lng": -68.7714796,
+      "color": "green",
+      "details": "PassPass",
+      "address": "1 MAIN ST, BANGOR, ME 04401-6303, Bangor, ME"
+    },
+    {
+      "name": "18518 - TIM HORTONS",
+      "date": "2018-04-192018-10-222024-11-04",
+      "lat": 44.8212785,
+      "lng": -68.7778331,
+      "color": "green",
+      "details": "PassPassPass",
+      "address": "594 BROADWAY, BANGOR, ME 04401-3338, Bangor, ME"
+    },
+    {
+      "name": "5211 - FOURTEENTH STREET",
+      "date": "2018-11-062019-11-132021-05-262022-03-022023-02-172023-11-132024-12-062025-10-09",
+      "lat": 44.8033454,
+      "lng": -68.7935056,
+      "color": "green",
+      "details": "PassPassPassPassPassPassPassPass",
+      "address": "224 FOURTEENTH ST, BANGOR, ME 04401-4447, Bangor, ME"
+    },
+    {
+      "name": "5212 - MARY SNOW SCHOOL",
+      "date": "2019-04-252020-01-172021-05-212022-03-012023-02-142023-11-142024-12-112025-12-08",
+      "lat": 44.8178779,
+      "lng": -68.7723758,
+      "color": "green",
+      "details": "PassPassPassPassPassPassPassPass",
+      "address": "435 BROADWAY, BANGOR, ME 04401-3927, Bangor, ME"
+    },
+    {
+      "name": "24670 - WHITE HOUSE INN (POOL)",
+      "date": "2019-06-212019-06-212025-08-132025-08-13",
+      "lat": 44.7735969,
+      "lng": -68.8631097,
+      "color": "green",
+      "details": "FailPassPassPass",
+      "address": "155 LITTLEFIELD AVE, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "29791 - KINGSBURY, CODI",
+      "date": "2021-10-27",
+      "lat": 44.8376939,
+      "lng": -68.7414265,
+      "color": "green",
+      "details": "Pass",
+      "address": "685 HOGAN RD, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "28768 - 360 NUTRITION OF BANGOR",
+      "date": "2020-09-04",
+      "lat": 44.8177017,
+      "lng": -68.8153405,
+      "color": "green",
+      "details": "Pass",
+      "address": "366 GRIFFIN RD, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "30817 - DANA, SIENNA",
+      "date": "2023-02-022023-05-102024-01-11",
+      "lat": 44.7995401,
+      "lng": -68.7917817,
+      "color": "green",
+      "details": "PassPassPass",
+      "address": "584 HAMMOND ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "30818 - GRAY, TIFFANY",
+      "date": "2023-02-02",
+      "lat": 44.7995401,
+      "lng": -68.7917817,
+      "color": "green",
+      "details": "Pass",
+      "address": "584 HAMMOND ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "21607 - PRICE, DONALD J",
+      "date": "2019-06-212023-02-072025-08-04",
+      "lat": 44.8032065,
+      "lng": -68.7710111,
+      "color": "green",
+      "details": "PassPassPass",
+      "address": "92 CENTRAL ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "22632 - WINSHIP, STEPHANIE",
+      "date": "2019-07-26",
+      "lat": 44.8147126,
+      "lng": -68.7584702,
+      "color": "green",
+      "details": "Pass",
+      "address": "176 MOUNT HOPE AVE, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "23658 - CROSS INSURANCE CENTER",
+      "date": "2025-08-18",
+      "lat": 44.7891853,
+      "lng": -68.7792351,
+      "color": "green",
+      "details": "Pass",
+      "address": "515 MAIN ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "29802 - TOMILSON, ABBY",
+      "date": "2021-10-272022-01-21",
+      "lat": 44.8019787,
+      "lng": -68.7695863,
+      "color": "green",
+      "details": "PassPass",
+      "address": "15 STATE ST, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "32876 - AROMA JOES",
+      "date": "2025-07-15",
+      "lat": 44.829097,
+      "lng": -68.7402749,
+      "color": "green",
+      "details": "Pass",
+      "address": "28 HASKELL RD, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "7276 - SEA DOG BREWING CO",
+      "date": "2025-03-27",
+      "lat": 44.7968419,
+      "lng": -68.7697703,
+      "color": "green",
+      "details": "Pass",
+      "address": "26 FRONT ST, BANGOR, ME 04401-6418, Bangor, ME"
+    },
+    {
+      "name": "25711 - EXPRESSO SELF",
+      "date": "2018-06-252018-08-20",
+      "lat": 44.830565,
+      "lng": -68.7491141,
+      "color": "green",
+      "details": "PassPass",
+      "address": "663 STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
+    },
+    {
+      "name": "30834 - OSTBERG, MISCHA",
+      "date": "2023-02-212024-07-25",
+      "lat": 44.8004666,
+      "lng": -68.7716226,
+      "color": "green",
+      "details": "PassPass",
+      "address": "58 MAIN ST, BANGOR, ME 04401, Bangor, ME"
+    }
+  ]
 }

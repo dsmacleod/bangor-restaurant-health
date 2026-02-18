@@ -1,0 +1,17 @@
+starting run
+rows=495
+success count=50
+starting run
+rows=495
+skipped_no_geocode name="29721 - FRENCH CRYSTAL" address="268 STATE ST STE 2, BANGOR, ME 04401, Bangor, ME"
+skipped_no_geocode name="31777 - AHMANIE SLAYTON" address="1 MAIN ST SUITE 202, BANGOR, ME 04401, Bangor, ME"
+skipped_no_geocode name="23601 - BETH PANCOE POOL" address="175 13TH ST, BANGOR, ME 04011, Bangor, ME"
+skipped_no_geocode name="22579 - MIKEYS FOODS" address="STATEWIDE, BANGOR, ME 04240, Bangor, ME"
+skipped_no_geocode name="7224 - NORAS GRILL" address="107 13TH ST, BANGOR, ME 04401-4564, Bangor, ME"
+skipped_no_geocode name="22584 - CANDO VENTURES LEMONADE" address="BANGOR FAIRGROUNDS, BANGOR, ME 04402, Bangor, ME"
+skipped_no_geocode name="22586 - CANDO VENTURES SAUSAGE" address="BANGOR FAIRGROUNDS, BANGOR, ME 04402, Bangor, ME"
+skipped_no_geocode name="25669 - FROSTY BOBS" address="STATEWIDE, BANGOR, ME 05468, Bangor, ME"
+skipped_no_geocode name="30802 - GILBERT, BRANDON" address="263 STATE ST STE 31, BANGOR, ME 04401, Bangor, ME"
+skipped_no_geocode name="24664 - NOSTRANO" address="STATEWIDE, BANGOR, ME 04401, Bangor, ME"
+skipped_no_geocode name="24681 - WENDYS RESTAURANT" address="56 BANGOR MALL RD, BANGOR, ME 04401, Bangor, ME"
+success count=39

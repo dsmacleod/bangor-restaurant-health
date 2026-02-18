@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import json
 import time
 from geopy.geocoders import Nominatim
+from datetime import datetime
+from pathlib import Path
 
 geolocator = Nominatim(user_agent="bangor_health_map")
 
@@ -14,15 +16,27 @@ def get_inspection_color(status, critical, non_critical):
     return "green"
 
 def scrape_bangor_health():
+    base_dir = Path(__file__).resolve().parent
+    data_path = base_dir / "inspections.json"
     # Maine portal search URL
     search_url = "https://apps.web.maine.gov/online/hip_search/health-inspection-search.html"
     
+    # fetch CSRF token first
+    resp0 = requests.get(search_url)
+    soup0 = BeautifulSoup(resp0.text, 'html.parser')
+    csrf_token = None
+    token_input = soup0.find('input', {'name': '_csrf'})
+    if token_input:
+        csrf_token = token_input.get('value')
+
     # We simulate a POST request to search by 'Bangor'
     payload = {
         'establishmentName': '',
         'city': 'Bangor',
         'submit': 'Search'
     }
+    if csrf_token:
+        payload['_csrf'] = csrf_token
     
     response = requests.post(search_url, data=payload)
     soup = BeautifulSoup(response.text, 'html.parser')
@@ -60,8 +74,13 @@ def scrape_bangor_health():
             except:
                 continue
 
-    with open('inspections.json', 'w') as f:
-        json.dump(results, f)
+    # wrap results in object with timestamp so the front-end can display a date
+    final_data = {
+        "last_run": datetime.now().strftime("%B %d, %Y at %I:%M %p"),
+        "establishments": results
+    }
+    with open(data_path, 'w') as f:
+        json.dump(final_data, f, indent=2)
 
 if __name__ == "__main__":
     scrape_bangor_health()
