@@ -1,11 +1,11 @@
 {
-  "last_run": "February 18, 2026 at 04:43 PM",
+  "last_run": "February 19, 2026 at 09:38 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
       "date": "2025-09-03",
-      "lat": 44.7918361,
-      "lng": -68.7763334,
+      "lat": 44.7835232,
+      "lng": -68.7806245,
       "color": "green",
       "details": "Pass",
       "address": "9 N MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -85,8 +85,8 @@
     {
       "name": "24591 - SWEET FROG",
       "date": "2021-01-202025-07-22",
-      "lat": 44.826508,
-      "lng": -68.7568642,
+      "lat": 44.8335242,
+      "lng": -68.7507718,
       "color": "green",
       "details": "PassPass",
       "address": "878B STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
