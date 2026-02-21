@@ -1,11 +1,11 @@
 {
-  "last_run": "February 20, 2026 at 09:34 AM",
+  "last_run": "February 21, 2026 at 09:23 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
       "date": "2025-09-03",
-      "lat": 44.7949649,
-      "lng": -68.7745494,
+      "lat": 44.7835232,
+      "lng": -68.7806245,
       "color": "green",
       "details": "Pass",
       "address": "9 N MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -148,8 +148,8 @@
     {
       "name": "24632 - PORTLAND PIE BANGOR",
       "date": "2025-04-28",
-      "lat": 44.7950022,
-      "lng": -68.7746774,
+      "lat": 44.7918361,
+      "lng": -68.7763334,
       "color": "green",
       "details": "Pass",
       "address": "89-91 MAIN ST, BANGOR, ME 04401, Bangor, ME"
