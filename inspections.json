@@ -1,5 +1,5 @@
 {
-  "last_run": "March 26, 2026 at 09:56 AM",
+  "last_run": "March 27, 2026 at 09:47 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
@@ -85,8 +85,8 @@
     {
       "name": "24591 - SWEET FROG",
       "date": "2021-01-202025-07-22",
-      "lat": 44.8335242,
-      "lng": -68.7507718,
+      "lat": 44.8288651,
+      "lng": -68.7548652,
       "color": "green",
       "details": "PassPass",
       "address": "878B STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
@@ -184,8 +184,8 @@
     {
       "name": "27721 - WINSHIP, SYDNEY",
       "date": "2019-08-202019-08-202024-04-26",
-      "lat": 44.8147712,
-      "lng": -68.7585205,
+      "lat": 44.8147126,
+      "lng": -68.7584702,
       "color": "green",
       "details": "PassPassPass",
       "address": "176 MT HOPE AVE, BANGOR, ME 04401, Bangor, ME"
@@ -292,8 +292,8 @@
     {
       "name": "22632 - WINSHIP, STEPHANIE",
       "date": "2019-07-26",
-      "lat": 44.8147126,
-      "lng": -68.7584702,
+      "lat": 44.8147712,
+      "lng": -68.7585205,
       "color": "green",
       "details": "Pass",
       "address": "176 MOUNT HOPE AVE, BANGOR, ME 04401, Bangor, ME"
