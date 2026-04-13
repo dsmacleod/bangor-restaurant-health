@@ -1,11 +1,11 @@
 {
-  "last_run": "April 12, 2026 at 09:16 AM",
+  "last_run": "April 13, 2026 at 09:35 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
       "date": "2025-09-03",
-      "lat": 44.7884011,
-      "lng": -68.7780675,
+      "lat": 44.7918361,
+      "lng": -68.7763334,
       "color": "green",
       "details": "Pass",
       "address": "9 N MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -292,8 +292,8 @@
     {
       "name": "22632 - WINSHIP, STEPHANIE",
       "date": "2019-07-26",
-      "lat": 44.8147712,
-      "lng": -68.7585205,
+      "lat": 44.8147126,
+      "lng": -68.7584702,
       "color": "green",
       "details": "Pass",
       "address": "176 MOUNT HOPE AVE, BANGOR, ME 04401, Bangor, ME"
