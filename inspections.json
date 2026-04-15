@@ -1,11 +1,11 @@
 {
-  "last_run": "April 14, 2026 at 09:32 AM",
+  "last_run": "April 15, 2026 at 09:32 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
       "date": "2025-09-03",
-      "lat": 44.7918361,
-      "lng": -68.7763334,
+      "lat": 44.7949649,
+      "lng": -68.7745494,
       "color": "green",
       "details": "Pass",
       "address": "9 N MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -21,11 +21,11 @@
     },
     {
       "name": "31747 - WOODS, ELIZABATH PAIGE",
-      "date": "2023-12-182024-03-18",
+      "date": "2023-12-182024-03-182026-04-13",
       "lat": 44.7826566,
       "lng": -68.7813436,
       "color": "green",
-      "details": "PassPass",
+      "details": "PassPassPass",
       "address": "703 MAIN ST, BANGOR, ME 04401, Bangor, ME"
     },
     {
@@ -120,11 +120,11 @@
     },
     {
       "name": "29743 - CRANE, ANDREW",
-      "date": "2021-10-062023-10-062024-03-18",
+      "date": "2021-10-062023-10-062024-03-182026-04-13",
       "lat": 44.7993592,
       "lng": -68.7671257,
       "color": "green",
-      "details": "PassPassPass",
+      "details": "PassPassPassPass",
       "address": "51 WASHINGTON ST, BANGOR, ME 04401, Bangor, ME"
     },
     {
@@ -292,8 +292,8 @@
     {
       "name": "22632 - WINSHIP, STEPHANIE",
       "date": "2019-07-26",
-      "lat": 44.8147126,
-      "lng": -68.7584702,
+      "lat": 44.8147712,
+      "lng": -68.7585205,
       "color": "green",
       "details": "Pass",
       "address": "176 MOUNT HOPE AVE, BANGOR, ME 04401, Bangor, ME"
