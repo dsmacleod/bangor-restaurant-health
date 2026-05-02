@@ -1,5 +1,5 @@
 {
-  "last_run": "May 01, 2026 at 09:33 AM",
+  "last_run": "May 02, 2026 at 09:25 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
@@ -103,7 +103,7 @@
     {
       "name": "8210 - THE ICE CREAM SALOON",
       "date": "2020-08-05",
-      "lat": 44.8000638,
+      "lat": 44.8000637,
       "lng": -68.7910823,
       "color": "green",
       "details": "Pass",
@@ -184,8 +184,8 @@
     {
       "name": "27721 - WINSHIP, SYDNEY",
       "date": "2019-08-202019-08-202024-04-26",
-      "lat": 44.8147712,
-      "lng": -68.7585205,
+      "lat": 44.8147126,
+      "lng": -68.7584702,
       "color": "green",
       "details": "PassPassPass",
       "address": "176 MT HOPE AVE, BANGOR, ME 04401, Bangor, ME"
@@ -193,8 +193,8 @@
     {
       "name": "27726 - 48 WAKE N SHAKE",
       "date": "2018-09-07",
-      "lat": 44.79013,
-      "lng": -68.7848447,
+      "lat": 44.7884751,
+      "lng": -68.77944,
       "color": "green",
       "details": "Pass",
       "address": "BASS PARK, BANGOR, ME 04401, Bangor, ME"
@@ -292,8 +292,8 @@
     {
       "name": "22632 - WINSHIP, STEPHANIE",
       "date": "2019-07-26",
-      "lat": 44.8147126,
-      "lng": -68.7584702,
+      "lat": 44.8147712,
+      "lng": -68.7585205,
       "color": "green",
       "details": "Pass",
       "address": "176 MOUNT HOPE AVE, BANGOR, ME 04401, Bangor, ME"
@@ -310,7 +310,7 @@
     {
       "name": "29802 - TOMILSON, ABBY",
       "date": "2021-10-272022-01-21",
-      "lat": 44.8019787,
+      "lat": 44.8019786,
       "lng": -68.7695863,
       "color": "green",
       "details": "PassPass",
@@ -346,8 +346,8 @@
     {
       "name": "30834 - OSTBERG, MISCHA",
       "date": "2023-02-212024-07-25",
-      "lat": 44.8004666,
-      "lng": -68.7716226,
+      "lat": 44.8004622,
+      "lng": -68.7716243,
       "color": "green",
       "details": "PassPass",
       "address": "58 MAIN ST, BANGOR, ME 04401, Bangor, ME"
