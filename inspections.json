@@ -1,5 +1,5 @@
 {
-  "last_run": "May 05, 2026 at 09:36 AM",
+  "last_run": "May 06, 2026 at 09:47 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
@@ -85,8 +85,8 @@
     {
       "name": "24591 - SWEET FROG",
       "date": "2021-01-202025-07-22",
-      "lat": 44.8288651,
-      "lng": -68.7548652,
+      "lat": 44.8471573,
+      "lng": -68.7390248,
       "color": "green",
       "details": "PassPass",
       "address": "878B STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
@@ -148,8 +148,8 @@
     {
       "name": "24632 - PORTLAND PIE BANGOR",
       "date": "2025-04-28",
-      "lat": 44.7917884,
-      "lng": -68.7762137,
+      "lat": 44.7884011,
+      "lng": -68.7780675,
       "color": "green",
       "details": "Pass",
       "address": "89-91 MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -184,8 +184,8 @@
     {
       "name": "27721 - WINSHIP, SYDNEY",
       "date": "2019-08-202019-08-202024-04-26",
-      "lat": 44.8147126,
-      "lng": -68.7584702,
+      "lat": 44.8147712,
+      "lng": -68.7585205,
       "color": "green",
       "details": "PassPassPass",
       "address": "176 MT HOPE AVE, BANGOR, ME 04401, Bangor, ME"
@@ -193,19 +193,19 @@
     {
       "name": "27726 - 48 WAKE N SHAKE",
       "date": "2018-09-07",
-      "lat": 44.7884751,
-      "lng": -68.77944,
+      "lat": 44.79013,
+      "lng": -68.7848447,
       "color": "green",
       "details": "Pass",
       "address": "BASS PARK, BANGOR, ME 04401, Bangor, ME"
     },
     {
       "name": "10323 - UMAMI",
-      "date": "2024-02-082024-05-06",
+      "date": "2024-02-082024-05-062026-05-01",
       "lat": 44.8014475,
       "lng": -68.7714796,
       "color": "green",
-      "details": "PassPass",
+      "details": "PassPassPass",
       "address": "1 MAIN ST, BANGOR, ME 04401-6303, Bangor, ME"
     },
     {
@@ -310,7 +310,7 @@
     {
       "name": "29802 - TOMILSON, ABBY",
       "date": "2021-10-272022-01-21",
-      "lat": 44.8019787,
+      "lat": 44.8019786,
       "lng": -68.7695863,
       "color": "green",
       "details": "PassPass",
@@ -346,8 +346,8 @@
     {
       "name": "30834 - OSTBERG, MISCHA",
       "date": "2023-02-212024-07-25",
-      "lat": 44.8004622,
-      "lng": -68.7716243,
+      "lat": 44.8004666,
+      "lng": -68.7716226,
       "color": "green",
       "details": "PassPass",
       "address": "58 MAIN ST, BANGOR, ME 04401, Bangor, ME"
