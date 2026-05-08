@@ -1,5 +1,5 @@
 {
-  "last_run": "May 07, 2026 at 09:51 AM",
+  "last_run": "May 08, 2026 at 09:32 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
@@ -85,8 +85,8 @@
     {
       "name": "24591 - SWEET FROG",
       "date": "2021-01-202025-07-22",
-      "lat": 44.8471573,
-      "lng": -68.7390248,
+      "lat": 44.8288651,
+      "lng": -68.7548652,
       "color": "green",
       "details": "PassPass",
       "address": "878B STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
@@ -310,7 +310,7 @@
     {
       "name": "29802 - TOMILSON, ABBY",
       "date": "2021-10-272022-01-21",
-      "lat": 44.8019787,
+      "lat": 44.8019786,
       "lng": -68.7695863,
       "color": "green",
       "details": "PassPass",
@@ -346,8 +346,8 @@
     {
       "name": "30834 - OSTBERG, MISCHA",
       "date": "2023-02-212024-07-25",
-      "lat": 44.8004666,
-      "lng": -68.7716226,
+      "lat": 44.8004622,
+      "lng": -68.7716243,
       "color": "green",
       "details": "PassPass",
       "address": "58 MAIN ST, BANGOR, ME 04401, Bangor, ME"
