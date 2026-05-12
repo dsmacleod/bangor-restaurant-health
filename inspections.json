@@ -1,11 +1,11 @@
 {
-  "last_run": "May 11, 2026 at 10:14 AM",
+  "last_run": "May 12, 2026 at 09:54 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
       "date": "2025-09-03",
-      "lat": 44.7806794,
-      "lng": -68.7821786,
+      "lat": 44.7917884,
+      "lng": -68.7762137,
       "color": "green",
       "details": "Pass",
       "address": "9 N MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -346,8 +346,8 @@
     {
       "name": "30834 - OSTBERG, MISCHA",
       "date": "2023-02-212024-07-25",
-      "lat": 44.8004666,
-      "lng": -68.7716226,
+      "lat": 44.8004622,
+      "lng": -68.7716243,
       "color": "green",
       "details": "PassPass",
       "address": "58 MAIN ST, BANGOR, ME 04401, Bangor, ME"
