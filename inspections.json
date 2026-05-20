@@ -1,11 +1,11 @@
 {
-  "last_run": "May 19, 2026 at 10:17 AM",
+  "last_run": "May 20, 2026 at 10:08 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
       "date": "2025-09-03",
-      "lat": 44.7917884,
-      "lng": -68.7762137,
+      "lat": 44.7943269,
+      "lng": -68.7748837,
       "color": "green",
       "details": "Pass",
       "address": "9 N MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -85,8 +85,8 @@
     {
       "name": "24591 - SWEET FROG",
       "date": "2021-01-202025-07-22",
-      "lat": 44.8395193,
-      "lng": -68.7456409,
+      "lat": 44.829893,
+      "lng": -68.7539127,
       "color": "green",
       "details": "PassPass",
       "address": "878B STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
@@ -229,7 +229,7 @@
     {
       "name": "5212 - MARY SNOW SCHOOL",
       "date": "2019-04-252020-01-172021-05-212022-03-012023-02-142023-11-142024-12-112025-12-08",
-      "lat": 44.8178779,
+      "lat": 44.817878,
       "lng": -68.7723758,
       "color": "green",
       "details": "PassPassPassPassPassPassPassPass",
@@ -346,8 +346,8 @@
     {
       "name": "30834 - OSTBERG, MISCHA",
       "date": "2023-02-212024-07-25",
-      "lat": 44.8004666,
-      "lng": -68.7716226,
+      "lat": 44.8004622,
+      "lng": -68.7716243,
       "color": "green",
       "details": "PassPass",
       "address": "58 MAIN ST, BANGOR, ME 04401, Bangor, ME"
