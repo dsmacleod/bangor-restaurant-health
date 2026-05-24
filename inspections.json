@@ -1,5 +1,5 @@
 {
-  "last_run": "May 23, 2026 at 09:34 AM",
+  "last_run": "May 24, 2026 at 09:37 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
@@ -31,8 +31,8 @@
     {
       "name": "8195 - NOCTURNEM DRAFT HAUS",
       "date": "2023-05-23",
-      "lat": 44.800516,
-      "lng": -68.7715908,
+      "lat": 44.8005194,
+      "lng": -68.7716241,
       "color": "green",
       "details": "Pass",
       "address": "56 MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -85,8 +85,8 @@
     {
       "name": "24591 - SWEET FROG",
       "date": "2021-01-202025-07-22",
-      "lat": 44.8395193,
-      "lng": -68.7456409,
+      "lat": 44.8376511,
+      "lng": -68.7472489,
       "color": "green",
       "details": "PassPass",
       "address": "878B STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
@@ -193,8 +193,8 @@
     {
       "name": "27726 - 48 WAKE N SHAKE",
       "date": "2018-09-07",
-      "lat": 44.7884751,
-      "lng": -68.77944,
+      "lat": 44.79013,
+      "lng": -68.7848447,
       "color": "green",
       "details": "Pass",
       "address": "BASS PARK, BANGOR, ME 04401, Bangor, ME"
@@ -310,7 +310,7 @@
     {
       "name": "29802 - TOMILSON, ABBY",
       "date": "2021-10-272022-01-21",
-      "lat": 44.8019786,
+      "lat": 44.8019787,
       "lng": -68.7695863,
       "color": "green",
       "details": "PassPass",
