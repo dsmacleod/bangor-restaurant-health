@@ -1,5 +1,5 @@
 {
-  "last_run": "June 17, 2026 at 10:33 AM",
+  "last_run": "June 18, 2026 at 10:31 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
@@ -85,8 +85,8 @@
     {
       "name": "24591 - SWEET FROG",
       "date": "2021-01-202025-07-22",
-      "lat": 44.8240862,
-      "lng": -68.7588607,
+      "lat": 44.8471573,
+      "lng": -68.7390248,
       "color": "green",
       "details": "PassPass",
       "address": "878B STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
@@ -148,8 +148,8 @@
     {
       "name": "24632 - PORTLAND PIE BANGOR",
       "date": "2025-04-28",
-      "lat": 44.7917884,
-      "lng": -68.7762137,
+      "lat": 44.7943269,
+      "lng": -68.7748837,
       "color": "green",
       "details": "Pass",
       "address": "89-91 MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -193,8 +193,8 @@
     {
       "name": "27726 - 48 WAKE N SHAKE",
       "date": "2018-09-07",
-      "lat": 44.7891105,
-      "lng": -68.780846,
+      "lat": 44.79013,
+      "lng": -68.7848447,
       "color": "green",
       "details": "Pass",
       "address": "BASS PARK, BANGOR, ME 04401, Bangor, ME"
@@ -346,8 +346,8 @@
     {
       "name": "30834 - OSTBERG, MISCHA",
       "date": "2023-02-212024-07-25",
-      "lat": 44.8004666,
-      "lng": -68.7716226,
+      "lat": 44.8004622,
+      "lng": -68.7716243,
       "color": "green",
       "details": "PassPass",
       "address": "58 MAIN ST, BANGOR, ME 04401, Bangor, ME"
