@@ -1,11 +1,11 @@
 {
-  "last_run": "July 09, 2026 at 10:20 AM",
+  "last_run": "July 10, 2026 at 10:07 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
       "date": "2025-09-03",
-      "lat": 44.7917884,
-      "lng": -68.7762137,
+      "lat": 44.7943269,
+      "lng": -68.7748837,
       "color": "green",
       "details": "Pass",
       "address": "9 N MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -193,8 +193,8 @@
     {
       "name": "27726 - 48 WAKE N SHAKE",
       "date": "2018-09-07",
-      "lat": 44.79013,
-      "lng": -68.7848447,
+      "lat": 44.7891105,
+      "lng": -68.780846,
       "color": "green",
       "details": "Pass",
       "address": "BASS PARK, BANGOR, ME 04401, Bangor, ME"
