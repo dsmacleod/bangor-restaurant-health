@@ -1,5 +1,5 @@
 {
-  "last_run": "July 21, 2026 at 09:49 AM",
+  "last_run": "July 22, 2026 at 09:48 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
@@ -84,11 +84,11 @@
     },
     {
       "name": "24591 - SWEET FROG",
-      "date": "2021-01-202025-07-22",
+      "date": "2016-08-092021-01-202025-07-22",
       "lat": 44.8240862,
       "lng": -68.7588607,
       "color": "green",
-      "details": "PassPass",
+      "details": "PassPassPass",
       "address": "878B STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
     },
     {
@@ -102,11 +102,11 @@
     },
     {
       "name": "8210 - THE ICE CREAM SALOON",
-      "date": "2020-08-05",
+      "date": "2016-05-162020-08-05",
       "lat": 44.8000638,
       "lng": -68.7910823,
       "color": "green",
-      "details": "Pass",
+      "details": "PassPass",
       "address": "569 HAMMOND ST, BANGOR, ME 04858, Bangor, ME"
     },
     {
@@ -129,11 +129,11 @@
     },
     {
       "name": "23600 - DAKIN POOL",
-      "date": "2020-09-08",
+      "date": "2020-09-082026-07-07",
       "lat": 44.8136054,
       "lng": -68.7693828,
       "color": "green",
-      "details": "Pass",
+      "details": "PassPass",
       "address": "375 PINE ST, BANGOR, ME 04401, Bangor, ME"
     },
     {
@@ -216,6 +216,15 @@
       "color": "green",
       "details": "PassPassPass",
       "address": "594 BROADWAY, BANGOR, ME 04401-3338, Bangor, ME"
+    },
+    {
+      "name": "24664 - NOSTRANO",
+      "date": "2016-05-092019-07-252022-06-152023-08-29",
+      "lat": 44.7939004,
+      "lng": -68.7731896,
+      "color": "green",
+      "details": "PassPassPassPass",
+      "address": ", BANGOR, ME 04401, Bangor, ME"
     },
     {
       "name": "5211 - FOURTEENTH STREET",
@@ -342,15 +351,6 @@
       "color": "green",
       "details": "PassPass",
       "address": "663 STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
-    },
-    {
-      "name": "30834 - OSTBERG, MISCHA",
-      "date": "2023-02-212024-07-25",
-      "lat": 44.8004666,
-      "lng": -68.7716226,
-      "color": "green",
-      "details": "PassPass",
-      "address": "58 MAIN ST, BANGOR, ME 04401, Bangor, ME"
     }
   ]
 }
