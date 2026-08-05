@@ -1,11 +1,11 @@
 {
-  "last_run": "August 04, 2026 at 09:54 AM",
+  "last_run": "August 05, 2026 at 09:53 AM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
       "date": "2025-09-03",
-      "lat": 44.7949649,
-      "lng": -68.7745494,
+      "lat": 44.7835232,
+      "lng": -68.7806245,
       "color": "green",
       "details": "Pass",
       "address": "9 N MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -148,8 +148,8 @@
     {
       "name": "24632 - PORTLAND PIE BANGOR",
       "date": "2025-04-28",
-      "lat": 44.7943269,
-      "lng": -68.7748837,
+      "lat": 44.7917884,
+      "lng": -68.7762137,
       "color": "green",
       "details": "Pass",
       "address": "89-91 MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -342,15 +342,6 @@
       "color": "green",
       "details": "Pass",
       "address": "26 FRONT ST, BANGOR, ME 04401-6418, Bangor, ME"
-    },
-    {
-      "name": "25711 - EXPRESSO SELF",
-      "date": "2018-06-252018-08-20",
-      "lat": 44.830565,
-      "lng": -68.7491141,
-      "color": "green",
-      "details": "PassPass",
-      "address": "663 STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
     }
   ]
 }
