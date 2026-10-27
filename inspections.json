@@ -1,11 +1,11 @@
 {
-  "last_run": "October 26, 2026 at 03:40 PM",
+  "last_run": "October 27, 2026 at 03:04 PM",
   "establishments": [
     {
       "name": "32768 - CURBSIDE EATS & TREATS",
       "date": "2025-09-03",
-      "lat": 44.7872512,
-      "lng": -68.7786101,
+      "lat": 44.7917884,
+      "lng": -68.7762137,
       "color": "green",
       "details": "Pass",
       "address": "9 N MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -31,8 +31,8 @@
     {
       "name": "8195 - NOCTURNEM DRAFT HAUS",
       "date": "2023-05-23",
-      "lat": 44.800516,
-      "lng": -68.7715908,
+      "lat": 44.8005194,
+      "lng": -68.7716241,
       "color": "green",
       "details": "Pass",
       "address": "56 MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -94,8 +94,8 @@
     {
       "name": "24591 - SWEET FROG",
       "date": "2016-08-092021-01-202025-07-22",
-      "lat": 44.8429813,
-      "lng": -68.7425981,
+      "lat": 44.8279341,
+      "lng": -68.7556674,
       "color": "green",
       "details": "PassPassPass",
       "address": "878B STILLWATER AVE, BANGOR, ME 04401, Bangor, ME"
@@ -157,8 +157,8 @@
     {
       "name": "24632 - PORTLAND PIE BANGOR",
       "date": "2025-04-28",
-      "lat": 44.7872512,
-      "lng": -68.7786101,
+      "lat": 44.7917884,
+      "lng": -68.7762137,
       "color": "green",
       "details": "Pass",
       "address": "89-91 MAIN ST, BANGOR, ME 04401, Bangor, ME"
@@ -237,11 +237,11 @@
     },
     {
       "name": "24664 - NOSTRANO",
-      "date": "2016-05-092019-07-252022-06-152023-08-29",
+      "date": "2016-05-092019-07-252022-06-152023-08-292026-10-14",
       "lat": 44.7939004,
       "lng": -68.7731896,
       "color": "green",
-      "details": "PassPassPassPass",
+      "details": "PassPassPassPassPass",
       "address": ", BANGOR, ME 04401, Bangor, ME"
     },
     {
@@ -333,15 +333,6 @@
       "color": "green",
       "details": "Pass",
       "address": "515 MAIN ST, BANGOR, ME 04401, Bangor, ME"
-    },
-    {
-      "name": "29802 - TOMILSON, ABBY",
-      "date": "2021-10-272022-01-21",
-      "lat": 44.8019786,
-      "lng": -68.7695863,
-      "color": "green",
-      "details": "PassPass",
-      "address": "15 STATE ST, BANGOR, ME 04401, Bangor, ME"
     }
   ]
 }
